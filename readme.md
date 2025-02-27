@@ -55,14 +55,13 @@ Green University of Bangladesh
 This repository is actively being developed as part of our undergraduate thesis. Content will be regularly updated and refined throughout the research process.
 
 ## 📄 License
-[Add your chosen license]
+Not chosen yet
 
 ## 📬 Contact
 For any queries regarding this research, please contact:
-- Sabbir Ahmed - [Add your email/contact]
-- Raihan Kabir - [Add email/contact]
-- Gourab Kanti Singha - [Add email/contact]
+- Sabbir Ahmed - msa29.contact@gmail.com
+- Raihan Kabir - raihank0192@gmail.com 
+- Gourab Kanti Singha - gourabks2@gmail.com
 
 ---
 ⚠️ **Note**: This is a work in progress. The content and structure will be updated regularly as the research progresses.
-

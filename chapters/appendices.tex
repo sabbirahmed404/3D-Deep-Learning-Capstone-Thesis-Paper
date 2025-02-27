@@ -1,0 +1,107 @@
+% Writing appendices is super super easy in LaTeX. You just write
+% \appendix to demarcate where the normal content ends and the appendices start. After \appendix, chapters (started with \chapter) are considered as appendices.
+%
+% In this example though, we're using the appendices environment. Long story short, this is because we want some fancy titles in the toc.
+\begin{appendices}
+
+% Appendix A
+% ----------
+
+\chapter{Some random python code}
+This template includes the \texttt{minted} package, which allows you to import code and syntax highlight it. For example, the text below is imported directly from the \texttt{code/test.py} file using the \textbackslash\texttt{inputminted} command:
+
+\begin{framed}
+\lstinputlisting[language=Python]{code/test.py}
+\end{framed}
+
+And here is a snippet of Python with the \texttt{minted} environment:
+
+\begin{framed}
+\begin{lstlisting}[language=Python, breaklines=true]
+# Why don't you try running this?
+# See what it does? hm?
+
+x = ['HELLO', 'WORLD', 'HOW', 'ARE', 'YOU']
+m = [0, 1, 2, 3, 4]
+
+c = ''.join(list(map(lambda y: chr(ord(y) ^ 5).upper() + ' ' if y != ' ' else '  ', ' '.join([ x[m[i]] for i, v in enumerate(m) ]))))
+print(c)
+\end{lstlisting}
+\end{framed}
+
+\cleardoublepage
+Minted supports many, many languages -- so you're not just limited to Python. For example, here's some random C++ code.
+
+\begin{framed}
+\begin{lstlisting}[language=C++, breaklines=true]
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+\end{lstlisting}
+\end{framed}
+
+
+
+
+
+
+
+% Appendix B
+% ----------
+
+\chapter{Glossary}
+<Define all the terms necessary to properly interpret the document, including acronyms and abbreviations.>
+
+\chapter{Deployment/Installation Guide}
+<Provide a list of instructions such that users of your system can deploy and install your system on their own>
+
+\chapter{User Manual}
+<Provide a manual such that users of your system can use your system after installation. In business software applications, where groups of users have access to only a sub-set of the application's full functionality, a user guide may be prepared for each group. There should be step by step instruction for each user class.>
+
+\chapter{Student Information Sheet}
+\begin{table}[htb]
+\centering
+%\caption{A list of house plants and their details.}
+\begin{tabular}{l|l|l|l|l}
+Roll No & Name & Email Address (FC College) & Frequently & Personal  \\
+& & & Checked Email & Cell\\\hline\hline
+        &     &  & &      \\
+         &      &  & &    \\
+\end{tabular}
+%\label{tbl:example-table}
+\end{table}
+
+
+
+\chapter{Plagiarism Free Certificate}
+This is to certify that, I am \textit{Your Name Here} S/D/o \textit{Father's Name Here}, group leader of FYP under registration no \textit{Your Registration No} at Computer Science Department, Forman Christian College (A Chartered University), Lahore. I declare that my Final year project report is checked by my supervisor and the similarity index is X\% that is less than 20\%, an acceptable limit by HEC. Report is attached herewith as Appendix F. To the best of my knowledge and belief, the report contains no material previously published or written by another person except where due reference is made in the report itself.
+
+\vspace{1cm}
+Date: \textit{Date Here} Name of Group Leader: \textit{Name Here} 
+
+Signature: 
+\vspace{1cm}
+
+Name of Supervisor: \textit{Supervisor Name Here}
+
+Designation: \textit{Designation here}
+
+Signature:
+\vspace{1cm}
+
+Co-Supervisor (if any): \textit{Co-supervisor name here}
+
+Designation:		\textit{Designation here}
+		   
+Signature:		
+\vspace{1cm}
+
+Senior Project Management Committee Representative: 			
+
+Signature:		                                                                        
+
+
+\chapter{Plagiarism Report}
+% End of appendices
+\end{appendices}

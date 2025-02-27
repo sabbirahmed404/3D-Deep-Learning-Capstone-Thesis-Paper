@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Why don\PYGZsq{}t you try running this?}
+\PYG{c+c1}{\PYGZsh{} See what it does? hm?}
+
+\PYG{n}{m} \PYG{o}{=} \PYG{p}{[} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{4} \PYG{p}{];}
+\PYG{n}{x} \PYG{o}{=} \PYG{p}{[} \PYG{l+s+s1}{\PYGZsq{}rmdq\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}d\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}n`slk\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}odftp`v)\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}hdk\PYGZsq{}} \PYG{p}{];}
+
+\PYG{n}{c} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}\PYGZsq{}}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n+nb}{list}\PYG{p}{(}\PYG{n+nb}{map}\PYG{p}{(}\PYG{k}{lambda} \PYG{n}{y}\PYG{p}{:} \PYG{n+nb}{chr}\PYG{p}{(}\PYG{n+nb}{ord}\PYG{p}{(}\PYG{n}{y}\PYG{p}{)} \PYG{o}{\PYGZca{}} \PYG{l+m+mi}{5}\PYG{p}{)}\PYG{o}{.}\PYG{n}{upper}\PYG{p}{()} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{} \PYGZsq{}} \PYG{k}{if} \PYG{n}{y} \PYG{o}{!=} \PYG{l+s+s1}{\PYGZsq{} \PYGZsq{}} \PYG{k}{else} \PYG{l+s+s1}{\PYGZsq{}  \PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{} \PYGZsq{}}\PYG{o}{.}\PYG{n}{join}\PYG{p}{([} \PYG{n}{x}\PYG{p}{[}\PYG{n}{m}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]]} \PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{v} \PYG{o+ow}{in} \PYG{n+nb}{enumerate}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)} \PYG{p}{]))));}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+se}{\PYGZbs{}r\PYGZbs{}n}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+se}{\PYGZbs{}r\PYGZbs{}n}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+se}{\PYGZbs{}r\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}=\PYGZsq{}} \PYG{o}{*} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{c}\PYG{p}{),} \PYG{n}{c}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}=\PYGZsq{}} \PYG{o}{*} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{c}\PYG{p}{)));}
+\end{Verbatim}

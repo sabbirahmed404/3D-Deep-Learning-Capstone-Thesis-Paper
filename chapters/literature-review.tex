@@ -1,0 +1,75 @@
+% Delete this
+Another cool thing about \LaTeX~is its referencing system. This template is set up to use harvard-style referencing. You can do this by using \texttt{\textbackslash citep\{citekey\}}. It will print out something like this: \citep{aad2012observation}. Or alternatively, you can use \texttt{\textbackslash cite\{citekey\}} to cite things like this: \cite{chatrchyan2012observation}. This template uses Bib\LaTeX~for referencing, with a Biber backend. This is primarily due to the extensive features Bib\LaTeX~provides, along with the option of glossaries. If you want to customise the referencing style, you can either modify the template slightly to use different options, or use \texttt{\textbackslash usepackage} again to reimport it. There's probably some commands to change its options after its been imported too.
+
+% Delete this section
+\section{Ludography}
+This thesis template also contains an optional ludography. This is primarily for Games Development students, who wish to cite games in their thesis. To use this, just put references into your bib file as usual with the game's details. Then, make sure \texttt{keywords} is set to \texttt{\{game\}}. This is what is used to determine which references are games, and which are actual papers. For a more elaborate example, see \texttt{bib/ludography.bib}.
+
+Also, make sure that the \texttt{title} key is actually the author of the game, and the \texttt{author} is the title of the game. The reason this is swapped around is because Bib\LaTeX~likes to print references out with the author first. Then, just add \texttt{\textbackslash printLudography} with an optional title argument to print out all citations like \texttt{\textbackslash printLudography} or \texttt{\textbackslash printLudography[Games]}.
+
+You can also use the \texttt{ludography} environment if you wish to print out some text before the list of games is printed. An example of this can be seen in \texttt{main.tex}. To cite games, you can \texttt{\textbackslash cite} it like any other reference. However, if you want it to display the title instead of the standard referencing style, you can use \texttt{\textbackslash citeGame} instead.
+
+Here is an example of a cited game with a normal reference style: ~\cite{spaceinvaders}. Ugh, pretty ugly. Instead, here the two are  cited in the next sentence as games with \texttt{\textbackslash citeGame}. Both \citeGame{spaceinvaders} and \citeGame{breakout} were games made by Atari. Much better!
+
+\section{Literature Review}
+<Provide an overview to the projects background knowledge without too much in detail (stick to the scope of the project). The background can refer to previous work referenced from journals, articles, newspapers, or any academic literature providing evidence that  the proposed problem is significant and real problem worth solving. If available, provide closely related work done within the project scope and the challenges or defects identified which can be considered as part of the new solution. Describe why you worked on this project in light of the literature review?>
+
+\section{User Classes and Characteristics}
+<Describe the various user classes that you have identified. Describe the pertinent characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the favored user classes from those who are less important to satisfy.>
+
+\section{Design and Implementation Constraints}
+<Describe any items or issues that limit the options available to the developers. These might include: corporate or regulatory policies; hardware limitations (timing requirements, memory requirements); interfaces to other applications; specific technologies, tools, and databases to be used; parallel operations; language requirements; communications protocols; security considerations; design conventions or programming standards (for example, if the customer’s organization will be responsible for maintaining the delivered software).>
+
+\section{Assumptions and Dependencies}
+<List any assumed factors (as opposed to known facts) that affect the requirements stated in the document. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project, unless they are already documented elsewhere (for example, in the vision and scope document or the project plan).>
+
+\section{Functional Requirements}
+<All functional requirements are expressed as use-cases. Fill out the following template for each use-case. Don’t really say “Use-Case 1.” State the use-case name in just a few words e.g. “Withdraw Cash from ATM”. A use-case may have multiple alternate courses of action.>
+
+\subsection{Name of Use-Case 1}
+\begin{table}[htb]
+\centering
+\caption{UC-1}
+\begin{tabular}{|cll|}
+\hline
+\multicolumn{1}{|l|}{\textbf{Identifier}}      & \multicolumn{2}{l|}{UC-1} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Purpose}}         & \multicolumn{2}{l|}{...}  \\ \hline
+\multicolumn{1}{|l|}{\textbf{Priority}} & \multicolumn{2}{l|}{\textless{}Choose one from \{High, Medium, Low\}\textgreater{}}        \\ \hline
+\multicolumn{1}{|l|}{\textbf{Pre-conditions}}  & \multicolumn{2}{l|}{...}  \\ \hline
+\multicolumn{1}{|l|}{\textbf{Post-conditions}} & \multicolumn{2}{l|}{...}  \\ \hline
+\multicolumn{3}{|c|}{\textbf{Typical Course of Action}}                    \\ \hline
+\multicolumn{1}{|c|}{\textbf{S\#}}      & \multicolumn{1}{c|}{\textbf{Actor Action}} & \multicolumn{1}{c|}{\textbf{System Response}} \\ \hline
+\multicolumn{1}{|c|}{\textbf{1}}               & \multicolumn{1}{l|}{}  &  \\ \hline
+\multicolumn{1}{|c|}{\textbf{2}}               & \multicolumn{1}{l|}{}  &  \\ \hline
+\multicolumn{1}{|c|}{\textbf{3}}               & \multicolumn{1}{l|}{}  &  \\ \hline
+\multicolumn{1}{|c|}{\textbf{...}}             & \multicolumn{1}{l|}{}  &  \\ \hline
+\multicolumn{3}{|c|}{\textbf{Alternate Course of Action}}                  \\ \hline
+\multicolumn{1}{|c|}{\textbf{1}}               & \multicolumn{1}{l|}{}  &  \\ \hline
+\multicolumn{1}{|c|}{\textbf{2}}               & \multicolumn{1}{l|}{}  &  \\ \hline
+\multicolumn{1}{|c|}{\textbf{3}}               & \multicolumn{1}{l|}{}  &  \\ \hline
+\multicolumn{1}{|c|}{\textbf{...}}             & \multicolumn{1}{l|}{}  &  \\ \hline
+\end{tabular}
+\label{tbl:table21}
+\end{table}
+\subsection{Name of Use-Case 2}
+
+\section{Use Case Diagram}
+<Provide the use case diagram>
+
+\section{Nonfunctional Requirements}
+\subsection{Performance Requirements}
+<If there are performance requirements for the product under various circumstances, state them here and explain their rationale, to help the developers understand the intent and make suitable design choices. Specify the timing relationships for real time systems. Make such requirements as specific as possible. You may need to state performance requirements for individual functional requirements or features.>
+
+\subsection{Safety Requirements}
+<Specify those requirements that are concerned with possible loss, damage, or harm that could result from the use of the product. Define any safeguards or actions that must be taken, as well as actions that must be prevented. Refer to any external policies or regulations that state safety issues that affect the product’s design or use. Define any safety certifications that must be satisfied.>
+
+\subsection{Security Requirements}
+<Specify any requirements regarding security or privacy issues surrounding use of the product or protection of the data used or created by the product. Define any user identity authentication requirements. Refer to any external policies or regulations containing security issues that affect the product. Define any security or privacy certifications that must be satisfied.>
+
+\subsection{Additional Software Quality Attributes}
+<Specify any additional quality characteristics for the product that are important to either the customers or the developers. Some to consider are: adaptability, availability, correctness, flexibility, interoperability, maintainability, portability, reliability, reusability, robustness, testability, and usability. Write these to be specific, quantitative, and verifiable when possible. At the least, clarify the relative preferences for various attributes, such as ease of use over ease of learning.>
+
+\section{Other Requirements}
+<Define any other requirements not covered elsewhere in the document. These might include database requirements, external (hardware, software, or communication) interface requirements, internationalization requirements, legal requirements, and reuse objectives for the project.>
+
+

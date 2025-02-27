@@ -1,0 +1,5 @@
+void CTimesTable::Print(const int number, const int upTo) const
+{
+    for(int i = 1; i <= upTo; i++)
+        printf("%d x %d = %d\r\n", number, i, number * i);
+}
